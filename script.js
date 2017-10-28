@@ -6,9 +6,11 @@ var win=0
 var playing = null
 
 playing = prompt("Do you want to play?")
-    if (playing = "yes");{
+    if (playing === "yes") {
         name=prompt ("Character name?")
         playing = true;
+     } else {
+         alert ("bye");
     }
 
 while (playing === true){
