@@ -1,4 +1,61 @@
 <html>
+    <head> <link rel = "stylesheet" type = "text/css" href = "style.css" /></head>
     <body>
-        <script src="script3.js"></script></body>
+        <div id = startgame>
+            <button value="start" onclick="start()">Start</button>
+        </div>
+        <script src="script4.js"></script></body>
+        <div id = "buttons">
+            <button value="attack" onclick="startCombat(this.value)">Attack</button>
+            <button value="heal" onclick="startCombat(this.value)">Heal</button>
+            <button value="quit" onclick="startCombat(this.value)">Quit</button>
+        </div>
+        <div id = happen></div>
+        <div class = stats>
+            <h4>Player Stats</h4>
+            <div id = player>
+                <div>
+                        <p>name</p>
+                        <div id = username>
+                        </div>
+                </div>
+                <div>
+                        <p>health</p>
+                        <progress id =health value="" max="40"></progress>
+                </div>
+                <div>
+                        <p>heals remaining</p>
+                        <progress id =heal value="" max="2"></progress>
+                </div>
+                <div>                
+                    <p>wins vs grant</p>
+                    <progress id =winsgrant value="" max="5"></progress>
+                </div>
+                <div>                
+                    <p>wins vs chirp</p>
+                    <div id = winschirp>
+                    </div>
+                </div>
+            </div>
+            <h4>Enemy Stats</h4>
+            <div id = enemy>
+                <div>
+                    <p>Enemy name</p>
+                    <div id = namegrant></div>
+                </div>
+                <div>
+                    <p>Health</p>
+                    <progress id =healthgrant value="" max="10"></progress>
+                </div>
+                <div>
+                    <p>Enemy name</p>
+                    <div id = namechirp></div>
+                </div>
+                <div>
+                    <p>Health</p>
+                    <progress id =healthchirp value="" max="6"></progress>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
